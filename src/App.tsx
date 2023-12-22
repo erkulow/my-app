@@ -1,5 +1,12 @@
+import Layout from './components/layout'
+import Main from './pages/main'
+
 function App() {
-	return <div className='text-red-500'>asd</div>
+	return (
+		<Layout>
+			<Main />
+		</Layout>
+	)
 }
 
 export default App

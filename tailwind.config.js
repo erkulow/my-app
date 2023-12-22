@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-	content: ['./src/**/*.{js,ts,jsx,tsx}' ],
+	content: ['./src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {},
 		screens: {
@@ -12,5 +12,19 @@ module.exports = {
 			xs: { max: '440px' }, // => @media (max-width: 480px) { ... }
 		},
 	},
-	plugins: [],
+	plugins: [require('daisyui')],
+	daisyui: {
+		themes: [
+			{
+				light: {
+					...require('daisyui/src/theming/themes')[
+						'[data-theme=light]'
+					],
+					primary: '#2D82BE',
+					'primary-focus': '#3186C3',
+					'primary-content': 'white',
+				},
+			},
+		],
+	},
 }
