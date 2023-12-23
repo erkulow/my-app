@@ -1,18 +1,19 @@
-interface IProps {
+import { FC } from 'react'
+
+interface IData {
 	img: string
 	title: string
-	isLoading: boolean
 }
 
-const HistoryCard = () => {
+const HistoryCard: FC<IData> = ({ img, title }) => {
 	return (
-		<div className='h-[81px] flex flex-col items-center justify-center'>
+		<div className='h-[80px] w-[60px] gap-1 flex flex-col items-center justify-center'>
 			<img
-				src=''
+				src={img}
 				alt='img'
-				className='w-[60px] h-[60px] rounded-full object-cover'
+				className='w-[60px] h-[60px] rounded-full object-cover min-w-[60px]'
 			/>
-			<span className='text-xs'>Подарки</span>
+			<span className='text-xs'>{title}</span>
 		</div>
 	)
 }

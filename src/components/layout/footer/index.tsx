@@ -3,7 +3,7 @@ import Logo from '../../ui/logo/logo'
 const Footer = () => {
 	return (
 		<div className='w-full flex justify-center px-14 bg-primary'>
-			<footer className='w-full max-w-[1440px] py-10 footer bg-base-200 text-white'>
+			<footer className='w-full max-w-[1440px] py-10 footer bg-base-200 text-white '>
 				<div className='flex flex-col max-w-[400px]'>
 					<Logo />
 					<span>

@@ -1,15 +1,20 @@
+import { Fragment } from 'react'
 import Categorys from '../../components/screens/main/category'
+import News from '../../components/screens/main/news'
 import Products from '../../components/screens/main/products'
+import AdressStores from '../../components/screens/main/store-addresses'
 import Hostory from '../../components/screens/main/story'
 
 const Main = () => {
 	return (
-		<div>
+		<Fragment>
 			<Hostory />
 			<Categorys />
-			<Products title='Категории' />
 			<Products title='Хиты продаж' />
-		</div>
+			<News />
+			<Products title='Аукционные товары' />
+			<AdressStores />
+		</Fragment>
 	)
 }
 

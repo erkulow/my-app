@@ -15,8 +15,8 @@ interface IProps {
 
 const Products: FC<IProps> = ({ title }) => {
 	return (
-		<div className='flex flex-col'>
-			<p>{title}</p>
+		<div className='w-full flex flex-col gap-6 mb-10'>
+			<p className='title'>{title}</p>
 			<div className='w-full'>
 				<ProductCard />
 			</div>
