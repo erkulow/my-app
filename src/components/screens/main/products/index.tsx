@@ -23,7 +23,7 @@ const Products: FC<IProps> = ({ title, data }) => {
 				navigation={true}
 				modules={[Autoplay]}
 				autoplay={{
-					delay: 1500,
+					delay: 2500,
 				}}
 				className='mySwiper w-full'
 			>

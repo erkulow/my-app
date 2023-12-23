@@ -18,7 +18,7 @@ const AdressCard: FC<IProps> = ({
 	geo,
 }) => {
 	return (
-		<div className='p-4 flex flex-col bg-white rounded-lg'>
+		<div className='p-4 flex flex-col bg-white rounded-lg hover:shadow-md'>
 			<div className='p-2 flex items-center justify-between border-b'>
 				<div className='flex items-center gap-4'>
 					<img

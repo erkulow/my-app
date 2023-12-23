@@ -3,7 +3,11 @@
 module.exports = {
 	content: ['./src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
-		extend: {},
+		extend: {
+			animation: {
+				marquee: 'marquee 25s linear infinite',
+			},
+		},
 		screens: {
 			xl: { max: '1279px' }, // => @media (max-width: 1279px) { ... }
 			lg: { max: '900px' }, // => @media (max-width: 1023px) { ... }

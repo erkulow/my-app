@@ -10,7 +10,7 @@ const ProductCard: FC<IProduct> = ({ name, image, favorite, price }) => {
 		setFavoriteValue(!favoriteValue)
 	}
 	return (
-		<div className='max-w-[200px] flex flex-col p-2 relative gap-2 bg-white'>
+		<div className='max-w-[200px] flex flex-col p-2 relative gap-2 bg-white rounded-md hover:shadow-md'>
 			<img className=' object-cover rounded-lg' src={image} alt='img' />
 			<span
 				className='p-2 right-3 top-3 rounded-md cursor-pointer absolute bg-gray-100/80'
