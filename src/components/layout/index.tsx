@@ -1,4 +1,3 @@
-import Container from '../../styles/container'
 import Footer from './footer'
 import Header from './header'
 
@@ -6,7 +5,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<>
 			<Header />
-			<Container>{children}</Container>
+			<main className='min-h-[calc(100vh_-_80px)] bg-[#f8faff]'>
+				{children}
+			</main>
 			<Footer />
 		</>
 	)

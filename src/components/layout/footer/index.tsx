@@ -78,30 +78,45 @@ const Footer = () => {
 						<span className='text-[#E0E0E0] text-[13px]'>
 							ЭлитСтрой
 						</span>
-						<a className='link link-hover'>ул. Ден-Сяопина 18/1</a>
+						<a href='/' className='link link-hover'>
+							ул. Ден-Сяопина 18/1
+						</a>
 					</div>
 					<div className='flex flex-col mb-2'>
 						<span className='text-[#E0E0E0] text-[13px]'>
 							Баткен
 						</span>
-						<a className='link link-hover'>ул. Льва-Толстого 19</a>
+						<a href='/' className='link link-hover'>
+							ул. Льва-Толстого 19
+						</a>
 					</div>
 					<div className='flex flex-col mb-2'>
 						<span className='text-[#E0E0E0] text-[13px]'>
 							ТааТан
 						</span>
-						<a className='link link-hover'>ул. Лермонтова 6</a>
+						<a href='/' className='link link-hover'>
+							ул. Лермонтова 6
+						</a>
 					</div>
 				</nav>
 				<nav>
 					<header className='footer-title'>Компания</header>
-					<a className='link link-hover text-[#E0E0E0] text-[13px]'>
+					<a
+						href='/'
+						className='link link-hover text-[#E0E0E0] text-[13px]'
+					>
 						Каталог
 					</a>
-					<a className='link link-hover text-[#E0E0E0] text-[13px]'>
+					<a
+						href='/'
+						className='link link-hover text-[#E0E0E0] text-[13px]'
+					>
 						Избранное
 					</a>
-					<a className='link link-hover text-[#E0E0E0] text-[13px]'>
+					<a
+						href='/'
+						className='link link-hover text-[#E0E0E0] text-[13px]'
+					>
 						Личный кабинет
 					</a>
 				</nav>
@@ -111,15 +126,23 @@ const Footer = () => {
 						<span className='text-[#E0E0E0] text-[13px]'>
 							Email:
 						</span>
-						<a className='link link-hover'>iskender.kg@gmail.com</a>
+						<a href='/' className='link link-hover'>
+							iskender.kg@gmail.com
+						</a>
 					</div>
 					<div className='flex flex-col mb-2 gap-1'>
 						<span className='text-[#E0E0E0] text-[13px]'>
 							Телефон:
 						</span>
-						<a className='link link-hover'>+996 (500) 000-104</a>
-						<a className='link link-hover'>+996 (997) 000-104</a>
-						<a className='link link-hover'>+996 (222) 000-104</a>
+						<a href='/' className='link link-hover'>
+							+996 (500) 000-104
+						</a>
+						<a href='/' className='link link-hover'>
+							+996 (997) 000-104
+						</a>
+						<a href='/' className='link link-hover'>
+							+996 (222) 000-104
+						</a>
 					</div>
 				</nav>
 			</footer>

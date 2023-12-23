@@ -1,3 +1,4 @@
+import Container from '../../../../styles/container'
 import HistoryCard from '../../../ui/cards/history-card'
 import Sceleton from '../../../ui/cards/history-card/sceleton'
 
@@ -26,14 +27,20 @@ const data = [
 
 const Hostory = () => {
 	return (
-		<div className='w-full flex gap-[30px] p-6 overflow-x-scroll mb-10'>
-			{data.map((item, index) => (
-				<HistoryCard key={index} img={item.img} title={item.title} />
-			))}
-			{data.map((item, index) => (
-				<Sceleton key={index} />
-			))}
-		</div>
+		<Container>
+			<div className='w-full flex gap-[30px] p-6 overflow-x-scroll mb-10'>
+				{data.map((item, index) => (
+					<HistoryCard
+						key={index}
+						img={item.img}
+						title={item.title}
+					/>
+				))}
+				{data.map((item, index) => (
+					<Sceleton key={index} />
+				))}
+			</div>
+		</Container>
 	)
 }
 
