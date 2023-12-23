@@ -27,16 +27,14 @@ const data = [
 
 const AdressStores = () => {
 	return (
-		<Container>
-			<div className='w-full flex flex-col gap-6 mb-10'>
-				<p className='title'>Адреса магазинов</p>
-				<div className='grid grid-cols-3 gap-4 md:grid-cols-1'>
-					{data.map((item, index) => (
-						<AdressCard key={index} {...item} />
-					))}
-				</div>
+		<div className='w-full flex flex-col gap-6 mb-10'>
+			<p className='title'>Адреса магазинов</p>
+			<div className='grid grid-cols-3 gap-4 md:grid-cols-1'>
+				{data.map((item, index) => (
+					<AdressCard key={index} {...item} />
+				))}
 			</div>
-		</Container>
+		</div>
 	)
 }
 

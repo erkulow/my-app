@@ -14,28 +14,26 @@ interface IProps {
 
 const Products: FC<IProps> = ({ title, data }) => {
 	return (
-		<Container>
-			<div className='w-full flex flex-col gap-6 mb-10'>
-				<p className='title'>{title}</p>
-				<Swiper
-					slidesPerView={6}
-					spaceBetween={10}
-					loop={true}
-					navigation={true}
-					modules={[Autoplay]}
-					autoplay={{
-						delay: 1500,
-					}}
-					className='mySwiper w-full'
-				>
-					{data?.map((item: IProduct, index: number) => (
-						<SwiperSlide key={index} className=''>
-							<ProductCard {...item} />
-						</SwiperSlide>
-					))}
-				</Swiper>
-			</div>
-		</Container>
+		<div className='w-full flex flex-col gap-6 mb-10'>
+			<p className='title'>{title}</p>
+			<Swiper
+				slidesPerView={6}
+				spaceBetween={10}
+				loop={true}
+				navigation={true}
+				modules={[Autoplay]}
+				autoplay={{
+					delay: 1500,
+				}}
+				className='mySwiper w-full'
+			>
+				{data?.map((item: IProduct, index: number) => (
+					<SwiperSlide key={index} className=''>
+						<ProductCard {...item} />
+					</SwiperSlide>
+				))}
+			</Swiper>
+		</div>
 	)
 }
 
